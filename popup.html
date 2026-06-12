@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phrase Remover</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Phrase Remover</h1>
+        
+        <div class="toggle-section">
+            <label class="toggle-label">
+                <input type="checkbox" id="toggleExtension" class="toggle-checkbox">
+                <span class="toggle-slider"></span>
+                <span id="toggleText">Extension: OFF</span>
+            </label>
+        </div>
+
+        <div class="phrase-section">
+            <h2>Phrases to Remove</h2>
+            <div id="phraseList" class="phrase-list"></div>
+            
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="phraseInput" 
+                    placeholder="Enter a phrase to remove..."
+                    class="phrase-input"
+                >
+                <button id="addBtn" class="btn btn-add">Add</button>
+            </div>
+        </div>
+
+        <div class="info">
+            <p>Toggle the extension on/off and add phrases you want to remove from websites. Changes apply instantly.</p>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
